@@ -1,0 +1,44 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Soufyan\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\LolitomsLogic\\LolitomsLogic.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Soufyan\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\LolitomsLogic\\LolitomsLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Soufyan\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\LolitomsLogic\\LolitomsLogic.csproj",
+        "projectName": "LolitomsLogic",
+        "projectPath": "C:\\Users\\Soufyan\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\LolitomsLogic\\LolitomsLogic.csproj",
+        "packagesPath": "C:\\Users\\Soufyan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Soufyan\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\LolitomsLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Soufyan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LolitomsLogic", "LolitomsLogic.csproj", "{B94645FB-FFE6-4F40-B3E0-BCDF4986A2FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B94645FB-FFE6-4F40-B3E0-BCDF4986A2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94645FB-FFE6-4F40-B3E0-BCDF4986A2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94645FB-FFE6-4F40-B3E0-BCDF4986A2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94645FB-FFE6-4F40-B3E0-BCDF4986A2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23152C12-029F-472D-B039-D0A399A14FD6}
+	EndGlobalSection
+EndGlobal

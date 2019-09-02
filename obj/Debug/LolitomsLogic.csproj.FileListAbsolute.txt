@@ -1,0 +1,10 @@
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\bin\Debug\LolitomsLogic.dll
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\bin\Debug\LolitomsLogic.pdb
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\bin\Debug\Terraria.exe
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\bin\Debug\Terraria.pdb
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\bin\Debug\Terraria.xml
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\obj\Debug\LolitomsLogic.csprojAssemblyReference.cache
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\obj\Debug\LolitomsLogic.csproj.CoreCompileInputs.cache
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\obj\Debug\LolitomsLogic.csproj.CopyComplete
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\obj\Debug\LolitomsLogic.dll
+C:\Users\Soufyan\Documents\My Games\Terraria\ModLoader\Mod Sources\LolitomsLogic\obj\Debug\LolitomsLogic.pdb
