@@ -27,7 +27,7 @@ namespace LolitomsLogic
             item.autoReuse = true;
 
             // projectile
-            item.shoot = 9; // star fury star
+            item.shoot = 503;
             item.shootSpeed = 8f;
         }
 
@@ -51,29 +51,32 @@ namespace LolitomsLogic
 		 	
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack) {
 			Vector2 target = Main.screenPosition + new Vector2((float)Main.mouseX, (float)Main.mouseY);
-			float ceilingLimit = target.Y;
+			float ceilingLimit = target.Y; // where the projectile hits the floor
+
+            // set the ceiling limit not lower than the player
 			if (ceilingLimit > player.Center.Y - 200f)
 			{
 				ceilingLimit = player.Center.Y - 200f;
 			}
+
+
 			for (int i = 0; i < 3; i++)
 			{
-				position = player.Center + new Vector2((-(float)Main.rand.Next(0, 401) * player.direction), -600f);
-				position.Y -= (100 * i);
-				Vector2 heading = target - position;
-				if (heading.Y < 0f)
-				{
-					heading.Y *= -1f;
-				}
-				if (heading.Y < 20f)
-				{
-					heading.Y = 20f;
-				}
-				heading.Normalize();
-				heading *= new Vector2(speedX, speedY).Length();
-				speedX = heading.X;
-				speedY = heading.Y + Main.rand.Next(-40, 41) * 0.02f;
+
+                position = player.Center;
+                position.Y -= 400 * i;
+
+                if (player.direction < 0) { // facing to the left -1
+                    position.X -= item.width + 30 * i;
+                }
+                else {
+                    position.X += item.width + 30 * i;
+                }
+				
+				speedX = 0;
+				speedY = 50;
 				Projectile.NewProjectile(position.X, position.Y, speedX, speedY, type, damage * 2, knockBack, player.whoAmI, 0f, ceilingLimit);
+                
 			}
 			return false;
 		}
