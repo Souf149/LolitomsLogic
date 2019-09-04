@@ -13,11 +13,11 @@ namespace LolitomsLogic
         }
 
         public override void SetDefaults() {
-            item.damage = 200;            
+            item.damage = 100;            
             item.melee = true;          
             item.width = 40;           
             item.height = 40;          
-            item.useTime = 20;          
+            item.useTime = 10;          
             item.useAnimation = item.useTime;        
             item.useStyle = 1;         
             item.knockBack = 6;        
