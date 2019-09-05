@@ -42,12 +42,8 @@ namespace LolitomsLogic {
 
         public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit) {
             // make item slower every 2 seconds
-            if (item.useTime < minUseTime) {
-                setAttackTime(minUseTime);
-            }
-            else {
-                setAttackTime(item.useTime - 4);
-            }
+            setAttackTime(item.useTime - 4);
+            
             frames = 0;
             
 
@@ -58,12 +54,10 @@ namespace LolitomsLogic {
 
             // make item slower every 2 seconds until max
             if (frames > 30) {
-                if (item.useTime > maxUseTime) {
-                    setAttackTime(maxUseTime);
-                }
-                else {
-                    setAttackTime(item.useTime + 1);
-                }
+                
+                
+                setAttackTime(item.useTime + 1);
+                
                 frames = 0;
             }
 
@@ -78,13 +72,26 @@ namespace LolitomsLogic {
         private void setAttackTime(int time) {
             item.useTime = time;
             item.useAnimation = time;
+
+            if(time < minUseTime) {
+                setAttackTime(minUseTime);
+            }
+
+            if(time > maxUseTime) {
+                setAttackTime(maxUseTime);
+            }
+
         }
 
 
-        // Star Wrath/Starfury style weapon. Spawn projectiles from sky that aim towards mouse.
-        // See Source code for Star Wrath projectile to see how it passes through tiles.
-
-
+        public override void MeleeEffects(Player player, Rectangle hitbox) {
+            if (reachedMaxSpeed) {
+                //Emit dusts when swing the sword
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, 20);
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, 21);
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, 27);
+            }
+        }
 
 
 
