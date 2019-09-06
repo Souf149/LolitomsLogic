@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace LolitomsLogic {
+namespace LolitomsLogic.Items.Weapons {
     public class Rageblade : ModItem {
 
         private int frames = 0;

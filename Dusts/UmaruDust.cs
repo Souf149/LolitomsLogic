@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace LolitomsLogic {
+namespace LolitomsLogic.Dusts {
     public class UmaruDust : ModDust {
         public override void OnSpawn(Dust dust) {
             dust.velocity *= 1.4f;
